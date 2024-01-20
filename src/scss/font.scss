@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'NanumGothic';
+  src:
+    url('../assets/fonts/NanumGothic.otf') format('opentype'),
+    url('../assets/fonts/NanumGothic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumGothic';
+  src:
+    url('../assets/fonts/NanumGothicBold.otf') format('opentype'),
+    url('../assets/fonts/NanumGothicBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumGothic';
+  src:
+    url('../assets/fonts/NanumGothicExtraBold.otf') format('opentype'),
+    url('../assets/fonts/NanumGothicExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NanumGothic';
+  src:
+    url('../assets/fonts/NanumGothicLight.otf') format('opentype'),
+    url('../assets/fonts/NanumGothicLight.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
