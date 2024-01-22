@@ -2,7 +2,7 @@ import SectionLayout from '@/common/layout/SectionLayout'
 import classNames from 'classnames/bind'
 import styles from './style/heading.module.scss'
 
-//TODO vido태그 작업
+/** 비디오 컴포넌트 */
 const cx = classNames.bind(styles)
 const Video = () => {
   return (
