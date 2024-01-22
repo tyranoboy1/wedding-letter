@@ -2,6 +2,7 @@ import classNames from 'classnames/bind'
 import { useEffect, useState } from 'react'
 import styles from './App.module.scss'
 import Message from './common/Message'
+import Gallery from './components/section/Gallery'
 import Heading from './components/section/Heading'
 import { IWeddingData } from './components/section/interface/section.interface'
 import Video from './components/section/Video'
@@ -44,12 +45,12 @@ function App() {
   if (wedding === null) {
     return null
   }
-  const { date } = wedding
-
+  const { date, galleryImages } = wedding
   return (
     <div className={cx('container')}>
       <Heading date={date} />
       <Video />
+      <Gallery images={galleryImages} />
       {JSON.stringify(wedding)}
     </div>
   )

@@ -7,17 +7,8 @@ const cx = classNames.bind(styles)
 const Video = () => {
   return (
     <SectionLayout className={cx('container')}>
-      <video
-        autoPlay
-        muted
-        loop
-        controls
-        poster={require('../../assets/poster.jpg')}
-      >
-        <source
-          src={require('../../assets/main.mp4')}
-          type="video/mp4"
-        ></source>
+      <video autoPlay muted loop controls poster={'/poster.jpg'}>
+        <source src={'/main.mp4'} type="video/mp4"></source>
       </video>
     </SectionLayout>
   )
