@@ -7,7 +7,7 @@ import './style/swiper.css'
 import { IImgView } from './interface/imgView.interface'
 
 const cx = classNames.bind(styles)
-
+// TODO letter 작업
 const ImgView = (props: IImgView) => {
   const { images, isOpen, selectedIdx, handleClose } = props
 
