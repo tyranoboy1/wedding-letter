@@ -8,6 +8,7 @@ import { IImgView } from './interface/imgView.interface'
 
 const cx = classNames.bind(styles)
 // TODO letter 작업
+// TODO 테스트 확인
 const ImgView = (props: IImgView) => {
   const { images, isOpen, selectedIdx, handleClose } = props
 
