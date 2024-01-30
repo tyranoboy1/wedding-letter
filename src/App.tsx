@@ -5,6 +5,7 @@ import Message from './common/Message'
 import Gallery from './components/section/Gallery'
 import Heading from './components/section/Heading'
 import { IWeddingData } from './components/section/interface/section.interface'
+import Intro from './components/section/Intro'
 import Video from './components/section/Video'
 
 const cx = classNames.bind(styles)
@@ -45,11 +46,25 @@ function App() {
   if (wedding === null) {
     return null
   }
-  const { date, galleryImages } = wedding
+  const {
+    date,
+    galleryImages,
+    groom,
+    bride,
+    location,
+    message: { intro },
+  } = wedding
   return (
     <div className={cx('container')}>
       <Heading date={date} />
       <Video />
+      <Intro
+        groomName={groom.name}
+        brideName={bride.name}
+        locationName={location.name}
+        date={date}
+        message={intro}
+      />
       <Gallery images={galleryImages} />
       {JSON.stringify(wedding)}
     </div>
