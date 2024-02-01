@@ -1,4 +1,5 @@
 import classNames from 'classnames/bind'
+import React from 'react'
 import styles from './style/sectionLayout.module.scss'
 
 const cx = classNames.bind(styles)
@@ -9,7 +10,7 @@ const SectionLayout = ({
 }: {
   children: React.ReactNode
   className?: string
-  title?: string
+  title?: React.ReactNode
 }) => {
   return (
     <section className={cx(['container', className])}>

@@ -2,11 +2,13 @@ import classNames from 'classnames/bind'
 import { useEffect, useState } from 'react'
 import styles from './App.module.scss'
 import Message from './common/Message'
+import Calendar from './components/section/Calendar'
 import Gallery from './components/section/Gallery'
 import Heading from './components/section/Heading'
 import { IWeddingData } from './components/section/interface/section.interface'
 import Intro from './components/section/Intro'
 import Invitation from './components/section/invitation'
+import Map from './components/section/Map'
 import Video from './components/section/Video'
 
 const cx = classNames.bind(styles)
@@ -68,7 +70,9 @@ function App() {
       />
       <Invitation message={invitation} />
       <Gallery images={galleryImages} />
-      {JSON.stringify(wedding)}
+      <Calendar date={date} />
+      <Map location={location} />
+      {/* {JSON.stringify(wedding)} */}
     </div>
   )
 }

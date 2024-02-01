@@ -24,7 +24,7 @@ export interface ILocation {
   waytocome: IWaytocomeItem
 }
 interface IWaytocomeItem {
-  metor: string[]
+  metro: string[]
   bus: string[]
 }
 
