@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react'
 import styles from './App.module.scss'
 import Message from './common/Message'
 import Calendar from './components/section/Calendar'
+import Contact from './components/section/Contact'
 import Gallery from './components/section/Gallery'
 import Heading from './components/section/Heading'
 import { IWeddingData } from './components/section/interface/section.interface'
@@ -72,6 +73,7 @@ function App() {
       <Gallery images={galleryImages} />
       <Calendar date={date} />
       <Map location={location} />
+      <Contact groom={groom} bride={bride} />
       {/* {JSON.stringify(wedding)} */}
     </div>
   )

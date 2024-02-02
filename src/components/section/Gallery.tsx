@@ -18,7 +18,6 @@ const Gallery = ({ images }: { images: string[] }) => {
   /** 이미지 뷰어 끄는 함수 */
   const handleClose = () => {
     setSelectedIdx(-1)
-    console.log('====')
   }
   return (
     <>

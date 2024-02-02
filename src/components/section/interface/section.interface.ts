@@ -32,6 +32,7 @@ interface IWaytocomeItem {
 interface IAccount {
   bankName: string
   accountNumber: string
+  kakaopayLink?: string
 }
 /** person 인터페이스 */
 export interface IPerson {
