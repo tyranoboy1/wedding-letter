@@ -10,6 +10,7 @@ import { IWeddingData } from './components/section/interface/section.interface'
 import Intro from './components/section/Intro'
 import Invitation from './components/section/invitation'
 import Map from './components/section/Map'
+import Share from './components/section/Share'
 import Video from './components/section/Video'
 
 const cx = classNames.bind(styles)
@@ -74,6 +75,7 @@ function App() {
       <Calendar date={date} />
       <Map location={location} />
       <Contact groom={groom} bride={bride} />
+      <Share groomName={groom.name} brideName={bride.name} date={date} />
       {/* {JSON.stringify(wedding)} */}
     </div>
   )

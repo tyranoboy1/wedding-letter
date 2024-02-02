@@ -40,3 +40,8 @@ export interface IPerson {
   phoneNumber: string
   account: IAccount
 }
+export interface IShare {
+  groomName: string
+  brideName: string
+  date: string
+}
