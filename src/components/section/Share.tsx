@@ -15,7 +15,7 @@ declare global {
 
 const cx = classNames.bind(styles)
 
-function Share({ groomName, brideName, date }: IShare) {
+const Share = ({ groomName, brideName, date }: IShare) => {
   useEffect(() => {
     const script = document.createElement('script')
     script.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.3.0/kakao.min.js'
@@ -78,7 +78,7 @@ function Share({ groomName, brideName, date }: IShare) {
   )
 }
 
-function IconKakao() {
+const IconKakao = () => {
   return (
     <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
       <title />
@@ -96,7 +96,7 @@ function IconKakao() {
   )
 }
 
-function IconClipboard() {
+const IconClipboard = () => {
   return (
     <svg enable-background="new 0 0 48 48" version="1.1" viewBox="0 0 48 48">
       <path
