@@ -2,6 +2,7 @@ import classNames from 'classnames/bind'
 import { useEffect, useState } from 'react'
 import styles from './App.module.scss'
 import Message from './common/Message'
+import Modal from './common/Modal'
 import Calendar from './components/section/Calendar'
 import Contact from './components/section/Contact'
 import Gallery from './components/section/Gallery'
@@ -76,6 +77,22 @@ function App() {
       <Map location={location} />
       <Contact groom={groom} bride={bride} />
       <Share groomName={groom.name} brideName={bride.name} date={date} />
+      <Modal
+        isOpen={true}
+        title="현재 참석자"
+        body={
+          <div>
+            <input />
+          </div>
+        }
+        onCloseButton={() => {
+          console.log('닫기')
+        }}
+        confirmButton={() => {
+          console.log('확인')
+        }}
+      />
+
       {/* {JSON.stringify(wedding)} */}
     </div>
   )
