@@ -1,5 +1,5 @@
 export interface IModal {
-  isOpen: boolean
+  open: boolean
   title?: string
   body: React.ReactNode
   onCloseButtonLabel?: string

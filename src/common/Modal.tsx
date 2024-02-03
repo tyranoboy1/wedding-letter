@@ -6,7 +6,7 @@ import styles from './style/modal.module.scss'
 
 const cx = classNames.bind(styles)
 const Modal = ({
-  isOpen,
+  open,
   title,
   body,
   onCloseButtonLabel = '닫기',
@@ -14,7 +14,7 @@ const Modal = ({
   onCloseButton,
   confirmButton,
 }: IModal) => {
-  if (!isOpen) {
+  if (open === false) {
     return null
   }
 
@@ -23,7 +23,9 @@ const Modal = ({
       <div className={cx('wrap-modal')}>
         <div className={cx('wrap-body')}>
           <div className={cx('wrap-content')}>
-            {title ? <div>{title}</div> : null}
+            {title == null ? null : (
+              <div className={cx('txt-title')}>{title}</div>
+            )}
             {body}
           </div>
           <div className={cx('wrap-buttons')}>
