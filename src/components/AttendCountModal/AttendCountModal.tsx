@@ -45,9 +45,7 @@ const AttendCountModal = ({ wedding }: { wedding: IWeddingData }) => {
         close()
       },
     })
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [open, close])
   return null
 }
 

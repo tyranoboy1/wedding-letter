@@ -1,5 +1,12 @@
 import Modal from '@/common/Modal'
-import { ComponentProps, createContext, useContext, useState } from 'react'
+import {
+  ComponentProps,
+  createContext,
+  useCallback,
+  useContext,
+  useMemo,
+  useState,
+} from 'react'
 import { createPortal } from 'react-dom'
 
 type IModal = ComponentProps<typeof Modal>
@@ -20,17 +27,20 @@ const initalState: IModal = {
 export const ModalContext = ({ children }: { children: React.ReactNode }) => {
   const [modal, setModal] = useState<IModal>(initalState)
   const $portal_root = document.getElementById('root-portal')
-  const open = (options: ModalOptions) => {
+  const open = useCallback((options: ModalOptions) => {
     setModal({ ...options, open: true })
-  }
-  const close = () => {
+  }, [])
+  const close = useCallback(() => {
     setModal(initalState)
-  }
+  }, [])
 
-  const values = {
-    open,
-    close,
-  }
+  const values = useMemo(
+    () => ({
+      open,
+      close,
+    }),
+    [open, close],
+  )
   return (
     <Context.Provider value={values}>
       {children}
