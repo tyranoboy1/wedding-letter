@@ -9,9 +9,7 @@
       "address": "경기도 수원시 팔달구 우만동 팔달문로 128\n수원 노블레스 웨딩컨벤션",
       "link": "https://map.kakao.com/?map_type=TYPE_MAP&target=car&rt=,,506715,1050669&rt1=&rt2=%EC%88%98%EC%9B%90%EB%85%B8%EB%B8%94%EB%A0%88%EC%8A%A4%EC%9B%A8%EB%94%A9%EC%BB%A8%EB%B2%A4%EC%85%98&rtIds=,9846217",
       "waytocome": {
-        "metro": [
-          "셔틀버스 운행 → 분당선 수원시청역 5번출구 수시운행"
-        ],
+        "metro": ["셔틀버스 운행 → 분당선 수원시청역 5번출구 수시운행"],
         "bus": [
           "수원역(4번출구) → 동수원병원 하차10, 11-1, 37, 720-2, 83-1 (약 20분)",
           "수원종합버스터미널 → 수병원 하차300, 300-1, 82-1, 80, 88 (약 20분)",
@@ -26,55 +24,55 @@
       }
     },
     "groom": {
-      "name": "류우선",
+      "name": "남편",
       "account": {
         "bankName": "신한",
-        "accountNumber": "110-356-123433",
+        "accountNumber": "미정",
         "kakaopayLink": "https://qr.kakaopay.com/Ej8HNpNJZ"
       },
       "phoneNumber": "01045532323",
       "parents": [
         {
-          "name": "류영만",
+          "name": "부모님1",
           "account": {
             "bankName": "농협",
-            "accountNumber": "233331-51-061400"
+            "accountNumber": "미정"
           },
-          "phoneNumber": "01053242422"
+          "phoneNumber": "01000000000"
         },
         {
-          "name": "봉미선",
+          "name": "부모님2",
           "account": {
             "bankName": "농협",
-            "accountNumber": "352-1252-4559-90"
+            "accountNumber": "미정"
           },
-          "phoneNumber": "01054912252"
+          "phoneNumber": "01000000000"
         }
       ]
     },
     "bride": {
-      "name": "이지혜",
+      "name": "부인",
       "account": {
         "bankName": "농협",
-        "accountNumber": "352-0952-4669-11"
+        "accountNumber": "미정"
       },
-      "phoneNumber": "01022345124",
+      "phoneNumber": "01000000000",
       "parents": [
         {
-          "name": "이훈이",
+          "name": "부모님1",
           "account": {
             "bankName": "카카오뱅크",
-            "accountNumber": "3333-1112-11932"
+            "accountNumber": "미정"
           },
-          "phoneNumber": "01024333423"
+          "phoneNumber": "01000000000"
         },
         {
-          "name": "정유리",
+          "name": "부모님2",
           "account": {
             "bankName": "국민",
-            "accountNumber": "222-19-8842-472"
+            "accountNumber": "미정"
           },
-          "phoneNumber": "01099928884"
+          "phoneNumber": "01000000000"
         }
       ]
     },
